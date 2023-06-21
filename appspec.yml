@@ -8,6 +8,9 @@ BeforeInstall:
   - location: /before_script.sh
     timeout: 300
     runas: root
+  - location: /start_script.sh
+    timeout: 300
+    runas: root
 ApplicationStop:
   - location: /after_script.sh
     timeout: 300
